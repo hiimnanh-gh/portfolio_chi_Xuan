@@ -1,3 +1,4 @@
+import { Reveal } from '@/components/shared';
 import styles from '../styles/AwardsPage.module.css';
 import { AwardCard } from './AwardCard';
 
@@ -6,8 +7,10 @@ export function AwardsGrid({ awards = [] }) {
 
   return (
     <div className={styles.awardsGrid}>
-      {awards.map((award) => (
-        <AwardCard key={award.id} award={award} />
+      {awards.map((award, index) => (
+        <Reveal key={award.id} direction="up" delay={index * 90} className="h-full">
+          <AwardCard award={award} />
+        </Reveal>
       ))}
     </div>
   );

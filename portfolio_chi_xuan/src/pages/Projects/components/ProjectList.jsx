@@ -1,3 +1,4 @@
+import { Reveal } from '@/components/shared';
 import { Card } from '@/components/ui';
 import { ProjectCard } from './ProjectCard';
 
@@ -13,12 +14,17 @@ export function ProjectList({ projects = [], emptyMessage, onOpenDetail }) {
   return (
     <div className="flex flex-col gap-6">
       {projects.map((project, index) => (
-        <ProjectCard
+        <Reveal
           key={project.id}
-          project={project}
-          index={index}
-          onOpenDetail={onOpenDetail}
-        />
+          direction={index % 2 === 0 ? 'left' : 'right'}
+          delay={80}
+        >
+          <ProjectCard
+            project={project}
+            index={index}
+            onOpenDetail={onOpenDetail}
+          />
+        </Reveal>
       ))}
     </div>
   );

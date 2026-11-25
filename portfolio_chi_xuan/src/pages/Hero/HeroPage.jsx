@@ -1,4 +1,4 @@
-import { SectionWrapper } from '@/components/shared';
+import { Reveal, SectionWrapper } from '@/components/shared';
 import { SECTION_IDS } from '@/config/navigation.config';
 import { PROFILE_DATA } from '@/data/profile.data';
 import { HeroContent } from './components/HeroContent';
@@ -11,11 +11,13 @@ export function HeroPage() {
     <SectionWrapper id={SECTION_IDS.HOME} spacing="lg">
       <div className={styles.heroGrid}>
         <HeroContent profile={PROFILE_DATA} heroData={HERO_DATA} />
-        <HeroPortrait
-          profile={PROFILE_DATA}
-          researchStatus={HERO_DATA.researchStatus}
-          identityCard={HERO_DATA.identityCard}
-        />
+        <Reveal direction="right" delay={120}>
+          <HeroPortrait
+            profile={PROFILE_DATA}
+            researchStatus={HERO_DATA.researchStatus}
+            identityCard={HERO_DATA.identityCard}
+          />
+        </Reveal>
       </div>
     </SectionWrapper>
   );

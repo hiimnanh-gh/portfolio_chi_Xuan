@@ -1,4 +1,4 @@
-import { SectionWrapper } from '@/components/shared';
+import { Reveal, SectionWrapper } from '@/components/shared';
 import { SECTION_IDS } from '@/config/navigation.config';
 import { PROFILE_DATA } from '@/data/profile.data';
 import { ContactForm } from './components/ContactForm';
@@ -10,16 +10,20 @@ export function ContactPage() {
   return (
     <SectionWrapper id={SECTION_IDS.CONTACT}>
       <div className={styles.contactGrid}>
-        <ContactInformation
-          heading={CONTACT_DATA.heading}
-          infoLabels={CONTACT_DATA.infoLabels}
-          mapData={CONTACT_DATA.map}
-          profile={PROFILE_DATA}
-        />
-        <ContactForm
-          formConfig={CONTACT_DATA.form}
-          recipientEmail={PROFILE_DATA.email}
-        />
+        <Reveal direction="left">
+          <ContactInformation
+            heading={CONTACT_DATA.heading}
+            infoLabels={CONTACT_DATA.infoLabels}
+            mapData={CONTACT_DATA.map}
+            profile={PROFILE_DATA}
+          />
+        </Reveal>
+        <Reveal direction="right" delay={100}>
+          <ContactForm
+            formConfig={CONTACT_DATA.form}
+            recipientEmail={PROFILE_DATA.email}
+          />
+        </Reveal>
       </div>
     </SectionWrapper>
   );

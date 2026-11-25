@@ -1,3 +1,4 @@
+import { Reveal } from '@/components/shared';
 import styles from '../styles/EducationPage.module.css';
 import { EducationCard } from './EducationCard';
 
@@ -6,8 +7,10 @@ export function EducationGrid({ items = [] }) {
 
   return (
     <div className={styles.educationGrid}>
-      {items.map((item) => (
-        <EducationCard key={item.id} item={item} />
+      {items.map((item, index) => (
+        <Reveal key={item.id} direction="up" delay={index * 90} className="h-full">
+          <EducationCard item={item} />
+        </Reveal>
       ))}
     </div>
   );

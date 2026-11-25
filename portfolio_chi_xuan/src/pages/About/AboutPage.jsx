@@ -1,4 +1,4 @@
-import { SectionWrapper } from '@/components/shared';
+import { Reveal, SectionWrapper } from '@/components/shared';
 import { SECTION_IDS } from '@/config/navigation.config';
 import { AboutContent } from './components/AboutContent';
 import { AboutHeading } from './components/AboutHeading';
@@ -15,11 +15,15 @@ export function AboutPage() {
         title={ABOUT_DATA.heading.title}
       />
       <div className={styles.aboutGrid}>
-        <AboutContent
-          philosophy={ABOUT_DATA.philosophy}
-          coreValues={ABOUT_DATA.coreValues}
-        />
-        <EcosystemCard ecosystem={ABOUT_DATA.ecosystem} />
+        <Reveal direction="left" className="h-full">
+          <AboutContent
+            philosophy={ABOUT_DATA.philosophy}
+            coreValues={ABOUT_DATA.coreValues}
+          />
+        </Reveal>
+        <Reveal direction="right" delay={100} className="h-full">
+          <EcosystemCard ecosystem={ABOUT_DATA.ecosystem} />
+        </Reveal>
       </div>
     </SectionWrapper>
   );
