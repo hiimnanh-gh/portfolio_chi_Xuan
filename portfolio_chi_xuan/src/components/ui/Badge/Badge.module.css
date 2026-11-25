@@ -1,0 +1,4 @@
+.badge {
+  letter-spacing: 0.04em;
+  transition: background-color var(--transition-fast), border-color var(--transition-fast);
+}
