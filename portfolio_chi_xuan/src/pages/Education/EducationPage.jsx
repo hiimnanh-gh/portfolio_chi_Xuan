@@ -1,19 +1,18 @@
-import { SectionHeading, SectionWrapper } from '@/components/shared';
-import { Card } from '@/components/ui';
+import { SectionWrapper } from '@/components/shared';
 import { SECTION_IDS } from '@/config/navigation.config';
-import { EDUCATION_DATA } from './data/education.data';
+import { EducationGrid } from './components/EducationGrid';
+import { EducationHeading } from './components/EducationHeading';
+import { EDUCATION_HEADING, EDUCATION_LIST } from './data/education.data';
 
 export function EducationPage() {
   return (
     <SectionWrapper id={SECTION_IDS.EDUCATION}>
-      <SectionHeading
-        number={EDUCATION_DATA.indexLabel}
-        label={EDUCATION_DATA.categoryLabel}
-        title={EDUCATION_DATA.title}
+      <EducationHeading
+        number={EDUCATION_HEADING.number}
+        label={EDUCATION_HEADING.label}
+        title={EDUCATION_HEADING.title}
       />
-      <Card>
-        <p className="text-sm text-[var(--color-text-body)]">{EDUCATION_DATA.placeholderNote}</p>
-      </Card>
+      <EducationGrid items={EDUCATION_LIST} />
     </SectionWrapper>
   );
 }
