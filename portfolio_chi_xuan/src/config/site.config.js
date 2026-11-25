@@ -9,9 +9,9 @@ export const SITE_CONFIG = {
   },
   favicon: '/favicon.svg',
   seo: {
-    title: 'Portfolio Kỹ Sư Robotics | STEM & AI',
+    title: 'Đào Thị Xuân — Portfolio Kỹ Sư Robotics & Giáo Dục STEM',
     description:
-      'Portfolio chuyên ngành Robotics, Engineering, STEM Education và Trí tuệ nhân tạo.',
+      'Hồ sơ năng lực, nghiên cứu Robotics, Hệ thống nhúng và Giáo dục STEM của Đào Thị Xuân.',
   },
   version: 'v2.4-lab',
   availability: {
