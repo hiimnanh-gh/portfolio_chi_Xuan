@@ -1,10 +1,10 @@
-import { Card } from '@/components/ui';
-import { AwardDescription } from './AwardDescription';
-import { AwardEvidenceLink } from './AwardEvidenceLink';
-import { AwardIcon } from './AwardIcon';
-import { AwardMetadata } from './AwardMetadata';
-import { AwardOrganization } from './AwardOrganization';
-import { AwardTitle } from './AwardTitle';
+import { Card } from "@/components/ui";
+import { AwardDescription } from "./AwardDescription";
+import { AwardEvidenceLink } from "./AwardEvidenceLink";
+import { AwardIcon } from "./AwardIcon";
+import { AwardMetadata } from "./AwardMetadata";
+import { AwardOrganization } from "./AwardOrganization";
+import { AwardTitle } from "./AwardTitle";
 
 export function AwardCard({ award }) {
   return (
@@ -14,7 +14,7 @@ export function AwardCard({ award }) {
       <AwardTitle title={award.title} />
       <AwardDescription description={award.description} />
 
-      <div className="mt-auto pt-5">
+      <div className="mt-auto pt-6">
         <AwardOrganization organization={award.organization} />
         <AwardEvidenceLink url={award.evidenceUrl} />
       </div>

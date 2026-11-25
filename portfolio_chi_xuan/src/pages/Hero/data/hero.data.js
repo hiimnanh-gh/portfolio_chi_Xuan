@@ -1,8 +1,3 @@
-/**
- * Dữ liệu riêng cho Hero Section.
- * Lưu ý: Các số liệu và nhãn trạng thái bên dưới là dữ liệu mẫu (placeholder)
- * để minh họa bố cục, cần thay thế bằng số liệu thực tế đã được xác thực.
- */
 export const HERO_DATA = {
   actions: {
     exploreProjectsLabel: 'Khám Phá Dự Án',

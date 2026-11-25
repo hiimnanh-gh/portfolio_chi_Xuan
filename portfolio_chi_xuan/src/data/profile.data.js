@@ -1,6 +1,5 @@
 export const PROFILE_DATA = {
-  fullName: 'Chị Xuân',
-  englishName: 'Xuan Robotics [Tên tiếng Anh mẫu]',
+  fullName: 'Đào Thị Xuân',
   initials: 'CX',
   avatar: {
     src: '',
@@ -20,9 +19,9 @@ export const PROFILE_DATA = {
   roleTitle: 'Chuyên Gia Robotics, Engineering, STEM Education & AI',
   tagline: 'CHUYÊN GIA ROBOTICS • STEM PIONEER',
   shortBio:
-    'Nghiên cứu và phát triển giải pháp robot thông minh, hệ thống nhúng, giáo dục STEM thực tiễn và ứng dụng trí tuệ nhân tạo. [Nội dung giới thiệu mẫu — cần cập nhật]',
+    'Nghiên cứu và phát triển giải pháp robot thông minh, hệ thống nhúng, giáo dục STEM thực tiễn và ứng dụng trí tuệ nhân tạo.',
   location: 'Hà Nội, Việt Nam',
-  email: 'contact@robotics-stem.io',
-  phone: '(+84) 900 000 000',
-  labAddress: 'Robotics & STEM Innovation Hub, Hà Nội',
+  email: 'xuanndaoo123@gmail.com',
+  phone: '(+84) 866 790 103',
+  labAddress: 'Hà Nội',
 };
