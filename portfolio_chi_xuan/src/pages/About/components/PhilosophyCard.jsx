@@ -8,7 +8,7 @@ export function PhilosophyCard({ title, paragraphs = [] }) {
           {title}
         </h3>
       )}
-      <div className="mt-4 space-y-3.5 text-sm leading-relaxed text-[var(--color-text-body)] sm:text-[15px]">
+      <div className="mt-4 space-y-3.5 text-justify text-sm leading-relaxed text-[var(--color-text-body)] sm:text-[15px]">
         {paragraphs.map((paragraph, index) => (
           <p key={index}>{paragraph}</p>
         ))}

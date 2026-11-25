@@ -47,7 +47,7 @@ export const AWARDS_LIST = [
     color: 'slate',
   },
    {
-    id: 'award-sample-3',
+    id: 'award-sample-4',
     icon: 'Robot',
     year: '2026',
     level: 'Đào tạo & thi đấu Robotics',

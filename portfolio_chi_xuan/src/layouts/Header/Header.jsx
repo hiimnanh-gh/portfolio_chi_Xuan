@@ -24,7 +24,11 @@ export function Header() {
   const { isOpen, toggleMenu, closeMenu } = useMobileMenu();
 
   const handleNavigate = (sectionId) => {
-    scrollToSection(sectionId);
+    if (sectionId === SECTION_IDS.HOME) {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    } else {
+      scrollToSection(sectionId);
+    }
     closeMenu();
   };
 

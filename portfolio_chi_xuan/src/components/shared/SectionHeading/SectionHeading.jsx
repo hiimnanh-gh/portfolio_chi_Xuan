@@ -42,7 +42,12 @@ export function SectionHeading({
         )}
 
         {description && (
-          <p className="mt-3 text-sm leading-relaxed text-[var(--color-text-body)] sm:text-base">
+          <p
+            className={cn(
+              'mt-3 text-sm leading-relaxed text-[var(--color-text-body)] sm:text-base',
+              !isCentered && 'text-justify',
+            )}
+          >
             {description}
           </p>
         )}

@@ -91,7 +91,7 @@ export function ProjectDetailModal({ project, onClose }) {
           />
         </div>
 
-        <div className="mt-5 space-y-3 text-sm leading-relaxed text-[var(--color-text-body)]">
+        <div className="mt-5 space-y-3 text-justify text-sm leading-relaxed text-[var(--color-text-body)]">
           {Array.isArray(project.fullDescription) && project.fullDescription.length > 0 ? (
             project.fullDescription.map((paragraph, idx) => <p key={idx}>{paragraph}</p>)
           ) : (

@@ -1,4 +1,4 @@
-import { Award, GraduationCap, Medal, Trophy } from 'lucide-react';
+import { Award, Bot, GraduationCap, Medal, Trophy } from 'lucide-react';
 import { IconBox } from '@/components/ui';
 
 const ICON_MAP = {
@@ -6,6 +6,8 @@ const ICON_MAP = {
   medal: Medal,
   award: Award,
   graduationCap: GraduationCap,
+  bot: Bot,
+  Robot: Bot,
 };
 
 export function AwardIcon({ icon = 'trophy', color = 'primary' }) {

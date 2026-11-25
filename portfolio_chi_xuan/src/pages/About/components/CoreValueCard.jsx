@@ -1,5 +1,5 @@
-import { Cpu, Layers, Sparkles, Users } from 'lucide-react';
-import { Card, IconBox } from '@/components/ui';
+import { Cpu, Layers, Sparkles, Users } from "lucide-react";
+import { Card, IconBox } from "@/components/ui";
 
 const ICON_MAP = {
   layers: Layers,
@@ -9,8 +9,8 @@ const ICON_MAP = {
 };
 
 export function CoreValueCard({
-  icon = 'layers',
-  iconVariant = 'primary',
+  icon = "layers",
+  iconVariant = "primary",
   title,
   description,
 }) {
@@ -24,7 +24,7 @@ export function CoreValueCard({
       <h4 className="mt-4 text-base font-bold text-[var(--color-text-heading)]">
         {title}
       </h4>
-      <p className="mt-2 text-sm leading-relaxed text-[var(--color-text-body)]">
+      <p className="mt-2 text-justify text-sm leading-relaxed text-[var(--color-text-body)]">
         {description}
       </p>
     </Card>
