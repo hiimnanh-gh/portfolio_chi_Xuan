@@ -1,0 +1,84 @@
+:root {
+  /* ==========================================================================
+     Color Tokens - Modern Engineering & Robotics Research Lab
+     ========================================================================== */
+  --color-bg-page: #F7F5F5;
+  --color-bg-surface: #FFFFFF;
+  --color-bg-muted: #F1EEF0;
+  --color-bg-input: #F4F1F2;
+
+  --color-brand-primary: #8D4D58;
+  --color-brand-primary-hover: #783F49;
+  --color-brand-primary-soft: #F5E4E8;
+
+  --color-brand-secondary: #A33172;
+  --color-brand-secondary-soft: #F7E7F0;
+
+  --color-brand-slate: #475569;
+  --color-brand-slate-soft: #EEF1F5;
+
+  --color-text-heading: #181D20;
+  --color-text-primary: #181D20;
+  --color-text-body: #626063;
+  --color-text-secondary: #626063;
+  --color-text-muted: #939096;
+
+  --color-border: #EAE5E7;
+  --color-border-subtle: #EAE5E7;
+  --color-border-strong: #D8D0D3;
+
+  --color-status-success: #16A085;
+  --color-status-online: #16A085;
+  --color-status-success-soft: #E8F6F3;
+
+  --color-status-error: #C0392B;
+  --color-status-error-soft: #FDEDEC;
+
+  /* ==========================================================================
+     Typography Tokens (Max 2 Font Families)
+     ========================================================================== */
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+
+  --text-xs: 0.75rem;      /* 12px */
+  --text-sm: 0.875rem;     /* 14px */
+  --text-base: 1rem;       /* 16px */
+  --text-lg: 1.125rem;     /* 18px */
+  --text-xl: 1.25rem;      /* 20px */
+  --text-2xl: 1.5rem;      /* 24px */
+  --text-3xl: 1.875rem;    /* 30px */
+  --text-4xl: 2.375rem;    /* 38px */
+  --text-5xl: 3rem;        /* 48px */
+
+  /* ==========================================================================
+     Radius Scale
+     ========================================================================== */
+  --radius-xs: 0.25rem;    /* 4px */
+  --radius-sm: 0.5rem;     /* 8px */
+  --radius-md: 0.75rem;    /* 12px */
+  --radius-lg: 1rem;       /* 16px */
+  --radius-xl: 1.25rem;    /* 20px */
+  --radius-pill: 9999px;
+
+  /* ==========================================================================
+     Elevation & Shadows (Minimalist, subtle lab feel)
+     ========================================================================== */
+  --shadow-xs: 0 1px 2px rgba(24, 29, 32, 0.04);
+  --shadow-card: 0 1px 3px rgba(24, 29, 32, 0.04), 0 4px 14px rgba(24, 29, 32, 0.03);
+  --shadow-card-hover: 0 6px 20px rgba(24, 29, 32, 0.07);
+  --shadow-elevated: 0 10px 28px rgba(24, 29, 32, 0.08);
+
+  /* ==========================================================================
+     Spacing & Layout
+     ========================================================================== */
+  --header-height: 4rem;
+  --container-max-width: 1280px;
+  --container-narrow-width: 960px;
+  --container-wide-width: 1320px;
+
+  /* ==========================================================================
+     Transitions
+     ========================================================================== */
+  --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-base: 220ms cubic-bezier(0.4, 0, 0.2, 1);
+}
