@@ -1,13 +1,15 @@
+import profileSampleImg from '@/assets/images/profile/profile-sample.jpg';
+
 export const PROFILE_DATA = {
   fullName: 'Đào Thị Xuân',
   initials: 'CX',
   avatar: {
-    src: '',
-    alt: 'Ảnh đại diện Chuyên gia Robotics & STEM',
+    src: profileSampleImg,
+    alt: 'Ảnh đại diện Đào Thị Xuân',
   },
   portrait: {
-    src: '',
-    alt: 'Chân dung Kỹ sư Robotics & Giáo dục STEM',
+    src: profileSampleImg,
+    alt: 'Chân dung Đào Thị Xuân - Chuyên gia Robotics & Giáo dục STEM',
     placeholderLabel: 'Ảnh chân dung (src/assets/images/profile)',
   },
   cv: {

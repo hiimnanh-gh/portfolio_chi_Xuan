@@ -4,7 +4,7 @@ export function CoreValuesGrid({ values = [] }) {
   if (!values.length) return null;
 
   return (
-    <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+    <div className="grid flex-1 grid-cols-1 gap-4 sm:grid-cols-2">
       {values.map((item) => (
         <CoreValueCard
           key={item.id}
