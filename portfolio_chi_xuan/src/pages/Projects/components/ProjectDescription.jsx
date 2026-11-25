@@ -1,0 +1,9 @@
+export function ProjectDescription({ description }) {
+  if (!description) return null;
+
+  return (
+    <p className="mt-3 text-sm leading-relaxed text-[var(--color-text-body)]">
+      {description}
+    </p>
+  );
+}
