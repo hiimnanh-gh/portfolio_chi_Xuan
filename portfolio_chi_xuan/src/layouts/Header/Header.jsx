@@ -14,7 +14,7 @@ import { MobileNavigation } from "./components/MobileNavigation";
 import styles from "./Header.module.css";
 
 const ORDERED_SECTION_IDS = [
-  SECTION_IDS.HERO,
+  SECTION_IDS.HOME,
   ...NAVIGATION_ITEMS.map((item) => item.id),
 ];
 
@@ -35,13 +35,13 @@ export function Header() {
         styles.header,
       )}
     >
-      <Container maxWidth="wide">
+      <Container>
         <div className="flex h-16 items-center justify-between gap-3">
           <a
-            href={`#${SECTION_IDS.HERO}`}
+            href={`#${SECTION_IDS.HOME}`}
             onClick={(event) => {
               event.preventDefault();
-              handleNavigate(SECTION_IDS.HERO);
+              handleNavigate(SECTION_IDS.HOME);
             }}
             className="flex shrink-0 items-center gap-2.5"
           >

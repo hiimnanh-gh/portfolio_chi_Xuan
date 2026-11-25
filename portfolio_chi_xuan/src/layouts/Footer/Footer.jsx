@@ -1,36 +1,44 @@
-import { Badge } from '@/components/ui';
-import { Container, SocialLinks } from '@/components/shared';
+import { Container } from '@/components/shared';
 import { SITE_CONFIG } from '@/config/site.config';
 import { PROFILE_DATA } from '@/data/profile.data';
 import { SOCIAL_LINKS } from '@/data/social.data';
 import { cn } from '@/utils';
+import { BackToTopButton } from './components/BackToTopButton';
+import { FooterBrand } from './components/FooterBrand';
+import { FooterCopyright } from './components/FooterCopyright';
+import { FooterDescription } from './components/FooterDescription';
+import { FooterSocialLinks } from './components/FooterSocialLinks';
+import { FooterTechnologyStack } from './components/FooterTechnologyStack';
 import styles from './Footer.module.css';
 
 export function Footer() {
   return (
-    <footer className={cn('border-t border-[var(--color-border-subtle)] py-10', styles.footer)}>
+    <footer className={cn('border-t border-[var(--color-border)] py-10 sm:py-12', styles.footer)}>
       <Container>
-        <div className="flex flex-col justify-between gap-6 border-b border-[var(--color-border-subtle)] pb-8 md:flex-row md:items-center">
-          <div>
-            <div className="flex items-center gap-2.5">
-              <span className="text-base font-bold text-[var(--color-text-primary)]">
-                {SITE_CONFIG.brandName}
-              </span>
-              <Badge variant="neutral" className="font-mono-tech text-[11px]">
-                {SITE_CONFIG.version}
-              </Badge>
-            </div>
-            <p className="mt-2 max-w-md text-xs text-[var(--color-text-muted)]">
-              {PROFILE_DATA.shortBio}
-            </p>
+        <div className="flex flex-col justify-between gap-6 border-b border-[var(--color-border)] pb-8 md:flex-row md:items-center">
+          <div className="min-w-0">
+            <FooterBrand
+              name={SITE_CONFIG.brandName}
+              version={SITE_CONFIG.version}
+            />
+            <FooterDescription description={PROFILE_DATA.shortBio} />
           </div>
 
-          <SocialLinks links={SOCIAL_LINKS} />
+          <FooterSocialLinks links={SOCIAL_LINKS} />
         </div>
 
-        <div className="mt-6 flex flex-col justify-between gap-2 text-xs text-[var(--color-text-muted)] sm:flex-row sm:items-center">
-          <p>{SITE_CONFIG.footer.copyright}</p>
-          <p className="font-mono-tech">{SITE_CONFIG.footer.ecosystemNote}</p>
+        <div className="mt-6 flex flex-col justify-between gap-4 lg:flex-row lg:items-center">
+          <FooterCopyright owner={SITE_CONFIG.footer.copyrightOwner} />
+
+          <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between lg:gap-6">
+            <FooterTechnologyStack
+              ecosystemNote={SITE_CONFIG.footer.ecosystemNote}
+              specialtyNote={SITE_CONFIG.footer.specialtyNote}
+            />
+            <div>
+              <BackToTopButton label={SITE_CONFIG.footer.backToTopLabel} />
+            </div>
+          </div>
         </div>
       </Container>
     </footer>

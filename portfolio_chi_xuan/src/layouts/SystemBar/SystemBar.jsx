@@ -17,7 +17,7 @@ export function SystemBar() {
       aria-label="Trạng thái hệ thống"
       className={cn('border-b border-[var(--color-border)] py-2.5', styles.systemBar)}
     >
-      <Container maxWidth="wide">
+      <Container>
         <div className="flex flex-col gap-2 font-mono-tech text-[11px] leading-relaxed sm:text-xs lg:flex-row lg:items-center lg:justify-between">
           <div className="flex flex-wrap items-center gap-x-3 gap-y-1">
             <SystemStatus label={status.label} isOnline={status.isOnline} />
