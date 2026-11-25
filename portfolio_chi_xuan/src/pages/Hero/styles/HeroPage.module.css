@@ -1,0 +1,21 @@
+.heroGrid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 2.5rem;
+  align-items: center;
+}
+
+@media (min-width: 1024px) {
+  .heroGrid {
+    grid-template-columns: minmax(0, 1.38fr) minmax(0, 1fr);
+    gap: 3rem;
+  }
+}
+
+.portraitFrame {
+  box-shadow: var(--shadow-elevated);
+}
+
+.floatingCard {
+  box-shadow: var(--shadow-elevated);
+}
