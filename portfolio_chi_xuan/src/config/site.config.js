@@ -7,7 +7,12 @@ export const SITE_CONFIG = {
     src: brandLogo,
     alt: 'Robotics & STEM Lab Logo',
   },
-  title: 'Portfolio Kỹ Sư Robotics | STEM & AI',
+  favicon: '/favicon.svg',
+  seo: {
+    title: 'Portfolio Kỹ Sư Robotics | STEM & AI',
+    description:
+      'Portfolio chuyên ngành Robotics, Engineering, STEM Education và Trí tuệ nhân tạo.',
+  },
   version: 'v2.4-lab',
   availability: {
     text: 'Sẵn sàng hợp tác / Open for Research & Projects',
@@ -15,8 +20,9 @@ export const SITE_CONFIG = {
     isAvailable: true,
   },
   footer: {
-    copyright: '© 2026 Robotics & STEM Engineering Portfolio. Bảo lưu mọi quyền.',
+    copyrightOwner: 'Robotics & STEM Engineering Portfolio. Bảo lưu mọi quyền.',
     ecosystemNote: 'Hoạt động trên ROS2 • STM32 • ESP32 Ecosystem',
     specialtyNote: 'Thiết kế phần cứng & Hệ thống nhúng',
+    backToTopLabel: 'Lên đầu trang',
   },
 };

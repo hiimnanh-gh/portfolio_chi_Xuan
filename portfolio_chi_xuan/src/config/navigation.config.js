@@ -1,5 +1,5 @@
 export const SECTION_IDS = {
-  HERO: 'hero',
+  HOME: 'home',
   ABOUT: 'about',
   EDUCATION: 'education',
   SKILLS: 'skills',
