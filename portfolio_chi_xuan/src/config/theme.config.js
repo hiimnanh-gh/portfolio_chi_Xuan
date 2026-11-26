@@ -10,7 +10,7 @@ export const THEME_CONFIG = {
     tertiarySoft: '#E6F2F4',
     neutral: '#5C5960',
     neutralSoft: '#EFECEE',
-    heading: '#181D20',
+    heading: '#162A45',
     body: '#626063',
     muted: '#939096',
     border: '#EAE5E7',

@@ -5,18 +5,18 @@ export const HERO_DATA = {
   },
   researchStatus: {
     label: "R&D STATUS",
-    value: "Robotics & STEM Lab",
+    value: "Robotics & STEM",
   },
   identityCard: {
     statusLabel: "Active Lab",
     isActive: true,
     specialty: "Robotics & STEM Education",
-    tags: ["ROS2 / Embedded Systems", "STEM & AI"],
+    tags: ["Arduino Uno R3, ESP32-S3  / Embedded Systems", "STEM & AI"],
   },
   stats: [
     {
       id: "experience",
-      value: "2+",
+      value: "3+",
       label: "Năm Giảng Dạy & Nghiên Cứu STEM",
       color: "var(--color-brand-primary)",
     },

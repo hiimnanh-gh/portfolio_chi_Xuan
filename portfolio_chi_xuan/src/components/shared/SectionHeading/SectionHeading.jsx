@@ -41,7 +41,7 @@ export function SectionHeading({
           {title && (
             <h2
               className={cn(
-                'font-bold tracking-tight text-[var(--color-text-heading)]',
+                'font-extrabold tracking-tight text-[var(--color-text-heading)]',
                 singleLine
                   ? 'text-xl sm:text-2xl lg:text-[1.75rem] xl:text-[1.95rem]'
                   : 'text-2xl sm:text-[1.75rem] lg:text-[2rem]',
