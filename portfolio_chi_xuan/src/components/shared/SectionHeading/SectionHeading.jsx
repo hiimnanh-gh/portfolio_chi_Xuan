@@ -29,11 +29,11 @@ export function SectionHeading({
           {eyebrowText && (
             <div
               className={cn(
-                'mb-3 flex items-center gap-3 text-eyebrow text-sm text-[var(--color-brand-primary)] sm:text-base',
+                'mb-2.5 flex items-center gap-2.5 text-eyebrow text-xs text-[var(--color-brand-primary)] sm:mb-3 sm:gap-3 sm:text-sm md:text-base',
                 isCentered && 'justify-center',
               )}
             >
-              <span className="inline-block h-[2px] w-7 bg-[var(--color-brand-primary)]" />
+              <span className="inline-block h-[2px] w-5 shrink-0 bg-[var(--color-brand-primary)] sm:w-7" />
               <span>{eyebrowText}</span>
             </div>
           )}
@@ -43,8 +43,8 @@ export function SectionHeading({
               className={cn(
                 'font-bold tracking-tight text-[var(--color-text-heading)]',
                 singleLine
-                  ? 'text-[1.625rem] sm:text-[1.875rem] lg:text-[2.125rem] xl:text-[2.25rem]'
-                  : 'text-[1.75rem] sm:text-[2.125rem] lg:text-[2.375rem]',
+                  ? 'text-xl sm:text-2xl lg:text-[1.75rem] xl:text-[1.95rem]'
+                  : 'text-2xl sm:text-[1.75rem] lg:text-[2rem]',
               )}
             >
               {title}

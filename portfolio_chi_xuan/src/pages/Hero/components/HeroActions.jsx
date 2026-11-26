@@ -4,8 +4,8 @@ import { ExploreProjectsButton } from './ExploreProjectsButton';
 
 export function HeroActions({ cv, exploreProjectsLabel, contactLinkLabel }) {
   return (
-    <div className="mt-6 flex flex-col items-start gap-3.5">
-      <div className="flex flex-wrap items-center gap-3">
+    <div className="mt-6 flex flex-col items-stretch gap-3.5 sm:items-start">
+      <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center">
         <DownloadCVButton
           url={cv?.url}
           fileName={cv?.fileName}
@@ -14,7 +14,9 @@ export function HeroActions({ cv, exploreProjectsLabel, contactLinkLabel }) {
         />
         <ExploreProjectsButton label={exploreProjectsLabel} />
       </div>
-      <ContactLink label={contactLinkLabel} />
+      <div className="flex justify-center sm:justify-start">
+        <ContactLink label={contactLinkLabel} />
+      </div>
     </div>
   );
 }

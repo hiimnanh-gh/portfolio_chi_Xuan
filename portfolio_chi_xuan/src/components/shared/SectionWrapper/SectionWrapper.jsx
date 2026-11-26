@@ -7,9 +7,9 @@ const BACKGROUND_CLASSES = {
 };
 
 const SPACING_CLASSES = {
-  sm: 'py-10 md:py-14',
-  md: 'py-14 md:py-20',
-  lg: 'py-16 md:py-24',
+  sm: 'py-8 sm:py-12 lg:py-14',
+  md: 'py-10 sm:py-14 lg:py-20',
+  lg: 'py-10 sm:py-16 lg:py-20',
 };
 
 export function SectionWrapper({
@@ -24,7 +24,7 @@ export function SectionWrapper({
     <section
       id={id}
       className={cn(
-        'scroll-mt-24',
+        'scroll-mt-24 overflow-x-clip',
         BACKGROUND_CLASSES[background] || BACKGROUND_CLASSES.default,
         SPACING_CLASSES[spacing] || SPACING_CLASSES.md,
         className,
