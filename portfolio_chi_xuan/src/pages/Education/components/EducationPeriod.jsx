@@ -3,6 +3,7 @@ import { Badge } from '@/components/ui';
 const COLOR_TO_VARIANT = {
   primary: 'primary',
   secondary: 'secondary',
+  tertiary: 'tertiary',
   neutral: 'neutral',
   slate: 'outline',
 };

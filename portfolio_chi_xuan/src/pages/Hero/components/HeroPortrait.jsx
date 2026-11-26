@@ -6,10 +6,10 @@ import { ResearchStatusCard } from './ResearchStatusCard';
 
 export function HeroPortrait({ profile, researchStatus, identityCard }) {
   return (
-    <div className="relative mx-auto w-full max-w-md lg:max-w-none">
+    <div className="relative mx-auto h-full w-full max-w-md lg:max-w-none">
       <div
         className={cn(
-          'relative overflow-hidden rounded-[var(--radius-xl)] border border-[var(--color-border)] bg-[var(--color-bg-surface)]',
+          'relative h-full overflow-hidden rounded-[var(--radius-xl)] border border-[var(--color-border)] bg-[var(--color-bg-surface)]',
           styles.portraitFrame,
         )}
       >
@@ -20,7 +20,8 @@ export function HeroPortrait({ profile, researchStatus, identityCard }) {
           aspectRatio="4/5"
           rounded="none"
           loading="eager"
-          className="w-full"
+          className="h-full w-full lg:aspect-auto"
+          imgClassName="object-cover object-top"
         />
 
         <ResearchStatusCard

@@ -11,7 +11,7 @@ export function HeroPage() {
     <SectionWrapper id={SECTION_IDS.HOME} spacing="lg">
       <div className={styles.heroGrid}>
         <HeroContent profile={PROFILE_DATA} heroData={HERO_DATA} />
-        <Reveal direction="right" delay={120}>
+        <Reveal direction="right" delay={120} className="h-full">
           <HeroPortrait
             profile={PROFILE_DATA}
             researchStatus={HERO_DATA.researchStatus}

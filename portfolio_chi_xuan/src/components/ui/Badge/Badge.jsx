@@ -4,8 +4,9 @@ import styles from './Badge.module.css';
 const VARIANT_CLASSES = {
   primary: 'bg-[var(--color-brand-primary-soft)] text-[var(--color-brand-primary)] border border-transparent',
   secondary: 'bg-[var(--color-brand-secondary-soft)] text-[var(--color-brand-secondary)] border border-transparent',
+  tertiary: 'bg-[var(--color-brand-tertiary-soft)] text-[var(--color-brand-tertiary)] border border-transparent',
   success: 'bg-[var(--color-status-success-soft)] text-[var(--color-status-success)] border border-transparent',
-  neutral: 'bg-[var(--color-bg-muted)] text-[var(--color-text-body)] border border-transparent',
+  neutral: 'bg-[var(--color-brand-neutral-soft)] text-[var(--color-brand-neutral)] border border-transparent',
   outline: 'bg-[var(--color-bg-surface)] text-[var(--color-text-body)] border border-[var(--color-border)]',
 };
 

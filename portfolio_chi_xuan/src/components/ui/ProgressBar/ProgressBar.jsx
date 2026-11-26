@@ -3,6 +3,8 @@ import { cn } from '@/utils';
 const BAR_VARIANTS = {
   primary: 'bg-[var(--color-brand-primary)]',
   secondary: 'bg-[var(--color-brand-secondary)]',
+  tertiary: 'bg-[var(--color-brand-tertiary)]',
+  neutral: 'bg-[var(--color-brand-neutral)]',
   slate: 'bg-[var(--color-brand-slate)]',
   success: 'bg-[var(--color-status-success)]',
 };

@@ -2,3 +2,29 @@
   background-color: rgba(255, 255, 255, 0.94);
   backdrop-filter: blur(8px);
 }
+
+.navLink {
+  position: relative;
+  transition:
+    color var(--transition-fast),
+    background-color var(--transition-fast);
+}
+
+.navLink::after {
+  content: '';
+  position: absolute;
+  left: 0.75rem;
+  right: 0.75rem;
+  bottom: 0.15rem;
+  height: 2px;
+  border-radius: var(--radius-pill);
+  background-color: var(--color-brand-primary);
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform var(--transition-base);
+}
+
+.navLink:hover::after,
+.navLinkActive::after {
+  transform: scaleX(1);
+}

@@ -9,6 +9,7 @@ export function SectionHeading({
   action = null,
   children = null,
   align = 'left',
+  singleLine = false,
   className = '',
 }) {
   const isCentered = align === 'center';
@@ -24,21 +25,28 @@ export function SectionHeading({
           className,
         )}
       >
-        <div className={cn('max-w-2xl', isCentered && 'mx-auto')}>
+        <div className={cn(singleLine ? 'w-full' : 'max-w-2xl', isCentered && 'mx-auto')}>
           {eyebrowText && (
             <div
               className={cn(
-                'mb-2.5 flex items-center gap-2.5 text-eyebrow text-[var(--color-brand-primary)]',
+                'mb-3 flex items-center gap-3 text-eyebrow text-sm text-[var(--color-brand-primary)] sm:text-base',
                 isCentered && 'justify-center',
               )}
             >
-              <span className="inline-block h-[1.5px] w-5 bg-[var(--color-brand-primary)]" />
+              <span className="inline-block h-[2px] w-7 bg-[var(--color-brand-primary)]" />
               <span>{eyebrowText}</span>
             </div>
           )}
 
           {title && (
-            <h2 className="text-2xl font-bold tracking-tight text-[var(--color-text-heading)] sm:text-3xl lg:text-[2rem]">
+            <h2
+              className={cn(
+                'font-bold tracking-tight text-[var(--color-text-heading)]',
+                singleLine
+                  ? 'text-[1.625rem] sm:text-[1.875rem] lg:text-[2.125rem] xl:text-[2.25rem]'
+                  : 'text-[1.75rem] sm:text-[2.125rem] lg:text-[2.375rem]',
+              )}
+            >
               {title}
             </h2>
           )}

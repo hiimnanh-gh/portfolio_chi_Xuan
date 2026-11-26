@@ -3,9 +3,10 @@ import { cn } from '@/utils';
 const VARIANT_CLASSES = {
   primary: 'bg-[var(--color-brand-primary-soft)] text-[var(--color-brand-primary)]',
   secondary: 'bg-[var(--color-brand-secondary-soft)] text-[var(--color-brand-secondary)]',
+  tertiary: 'bg-[var(--color-brand-tertiary-soft)] text-[var(--color-brand-tertiary)]',
   slate: 'bg-[var(--color-brand-slate-soft)] text-[var(--color-brand-slate)]',
   success: 'bg-[var(--color-status-success-soft)] text-[var(--color-status-success)]',
-  neutral: 'bg-[var(--color-bg-muted)] text-[var(--color-text-heading)]',
+  neutral: 'bg-[var(--color-brand-neutral-soft)] text-[var(--color-brand-neutral)]',
 };
 
 const SIZE_CLASSES = {

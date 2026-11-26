@@ -47,9 +47,13 @@ export function Header() {
               event.preventDefault();
               handleNavigate(SECTION_IDS.HOME);
             }}
-            className="flex shrink-0 items-center gap-2.5"
+            className="group flex shrink-0 items-center gap-2.5 rounded-[var(--radius-sm)] transition-opacity hover:opacity-90"
           >
-            <Logo src={SITE_CONFIG.logo.src} alt={SITE_CONFIG.logo.alt} />
+            <Logo
+              src={SITE_CONFIG.logo.src}
+              alt={SITE_CONFIG.logo.alt}
+              className="transition-transform duration-200 group-hover:scale-105"
+            />
             <BrandIdentity
               name={SITE_CONFIG.brandName}
               subtitle={SITE_CONFIG.brandSubtitle}
